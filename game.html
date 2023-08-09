@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Dice</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <h1>Simon Dice</h1>
+  <div class="game-container">
+    <a class="button" href="formulario.html">Contacto</a>
+    <div id="btn-start" class="button">Iniciar Juego</div>
+    <div id="btn-pause" class="button">Pausar Juego</div>
+    <div class="score">Puntaje: <span id="score">0</span></div>
+    <div class="level">Nivel: <span id="level">1</span></div>
+    <div id="simon-container">
+      <div class="row">
+        <div id="red" class="simon-button"></div>
+        <div id="blue" class="simon-button"></div>
+      </div>
+      <div class="row">
+        <div id="green" class="simon-button"></div>
+        <div id="yellow" class="simon-button"></div>
+      </div>
+    </div>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>¡Perdiste!</h2>
+      <p>Tu puntaje final es: <span id="final-score"></span></p>
+      <button id="btn-restart">Reiniciar</button>
+    </div>
+  </div>
+  <div class="sort-buttons">
+    <button id="btn-sort-date" class="button">Ordenar por Fecha</button>
+    <button id="btn-sort-score" class="button">Ordenar por Puntaje</button>
+  </div>
+  <div id="ranking-container">
+    <h2>Ranking</h2>
+    <ul id="ranking-list"></ul>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
